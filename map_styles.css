@@ -1,0 +1,254 @@
+:root {
+    --color-blue-light: #0098DB;
+    --color-blue-dark: #00549F;
+    --color-blue-2-light: #00338D;
+    --color-blue-2-dark: #002664;
+    --color-green-light: #008542;
+    --color-green-dark: #284E36;
+    --color-yellow-light: #FDC82F;
+    --color-yellow-dark: #B88B00;
+    --color-orange-light: #E37222;
+    --color-orange-dark: #9D5116;
+    --color-red-light: #D0103A;
+    --color-red-dark: #822433;
+    --color-link-visited: #4C2C92;
+    --color-black; #000000;
+    --color-grey-light: #D5D6D2;
+    --color-grey-light2: #9A9B9C;
+    --color-grey-light3: #747678;
+    --color-grey-dark: #4D4F53;
+    --color-silver: #8B8D8E;
+}
+
+body {
+  height: auto;
+  position: relative;
+}
+
+html {
+  font-face: "Merriweather",serif;
+  font-size: 16px;
+}
+
+@font-face  {
+    font-family: 'NotesEsaBold';
+    src: url('http://esa.int/extension/esa_ext/design/esn2/stylesheets/NotesEsaBol.eot');
+    src: url('http://esa.int/extension/esa_ext/design/esn2/stylesheets/NotesEsaBol.eot?#iefix') format('embedded-opentype'), url('http://esa.int/extension/esa_ext/design/esn2/stylesheets/NotesEsaBol.ttf') format('truetype'), url('http://esa.int/extension/esa_ext/design/esn2/stylesheets/notesesabol-webfont.svg#NotesEsaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face  {
+    font-family: 'NotesEsaRegular';
+    src: url('http://esa.int/extension/esa_ext/design/esn2/stylesheets/NotesEsaReg.eot');
+    src: url('http://esa.int/extension/esa_ext/design/esn2/stylesheets/NotesEsaReg.eot?#iefix') format('embedded-opentype'), url('http://esa.int/extension/esa_ext/design/esn2/stylesheets/NotesEsaReg.ttf') format('truetype'), url('http://esa.int/extension/esa_ext/design/esn2/stylesheets/NotesEsaReg.svg#NotesEsaReg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+  color: var(--color-blue-dark);
+}
+
+a:hover {
+  background-color: var(--color-blue-dark);
+  color: white;
+}
+
+a:visited: {
+  color: var(--color-link-visited);
+}
+
+a.external {
+  text-decoration: underline dotted var(--color-blue-dark);
+}
+
+a.external:visited {
+  text-decoration: underline dotted var(--color-link-visited);
+}
+
+a.button {
+  font-family: "NotesEsa";
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 2em;
+  padding: .2em .5em .2em .5em;
+  margin: .5em 1em .5em 1em;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  background-color: var(--color-blue-light);
+  border-bottom: 3px solid var(--color-blue-dark);
+  white-space: nowrap;
+}
+
+a.button-green {
+  background-color: var(--color-green-light);
+  border-bottom: 3px solid var(--color-green-dark);
+}
+
+a.button-disabled {
+  background-color: var(--color-grey-light2);
+  border-bottom: 3px solid var(--color-grey-dark);
+  cursor:default;
+}
+
+a.button-red {
+  background-color: var(--color-red-light);
+  border-bottom: 3px solid var(--color-red-dark);
+}
+
+
+h1 {
+    font-family: "NotesEsa";
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    color: var(--color-black);
+}
+
+h2 {
+  font-family: "NotesEsa";
+  font-weight: bold;
+  margin-bottom: .5em;
+  font-size: 2rem;
+  color: var(--color-black);
+}
+
+h3 {
+  font-family: "NotesEsa";
+  font-weight: bold;
+  margin-bottom: .5em;
+  font-size: 1.5rem;
+  color: var(--color-black);
+}
+
+
+h4 {
+  font-family: "NotesEsa";
+  font-weight: normal;
+  margin-bottom: .5em;
+  font-size: 1.2rem;
+  color: var(--color-black);
+}
+
+div.paragraph {
+  max-width: 50em;
+  margin-bottom: 0.5em;
+  line-height: 1.4em;
+}
+
+div.code {
+  font-family: Consolas, monospace;
+  font-size: 1em;
+  border-left: 2px solid var(--color-blue-light);
+  margin-top: .5em;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  padding-bottom: .5em;
+  max-width: 60em;
+}
+
+span.code {
+  font-family: Consolas, monospace;
+  font-size: 1em;
+}
+
+table.styled-green {
+  border: none;
+  border-collapse: collapse;
+}
+
+table.styled-green th {
+  background-color: var(--color-green-light);
+  color: white;
+  border-bottom: 2px solid var(--color-grey-dark);
+  font-family: "NotesEsa";
+  font-size: 1rem;
+  text-align: left;
+  padding: 4px 1em 4px 6px;
+}
+
+table.styled-green th:first-child {
+  border-top-left-radius: 3px;
+}
+
+table.styled-green th:last-child {
+  border-top-right-radius: 3px;
+}
+
+table.styled-green td {
+  border-bottom: 1px solid var(--color-grey-light2);
+  padding: 4px 1em 4px 6px;
+}
+
+table.compact td,th {
+  padding: 2px 4px 2px 4px;
+}
+
+ul {
+    list-style: none; /* Remove list bullets */
+    list-style-position: outside;
+    padding: 0;
+    margin-top: .5em;
+}
+
+li {
+    padding-left: 18px;
+    text-indent: -18px;
+}
+
+li:before {
+    content: "\2022"; /* Insert content that looks like bullets */
+    padding-right: 12px;
+    color: var(--color-silver); /* Or a color you prefer */
+}
+
+div.alert-message {
+  background-color: var(--color-yellow-light);
+  border: 2px solid var(--color-yellow-dark);
+  color: black;
+  font-family: "Open Sans",sans-serif;
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 4px 8px 4px 8px;
+}
+
+div.navbar {
+  background: var(--color-blue-dark);
+  color:white;
+  width: 100%;
+  position:fixed;
+  margin-left: -10px;
+  margin-top: -10px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  padding-right: 24px;
+
+}
+
+span.site-header {
+  text-align: left;
+  font-family: NotesEsa;
+  font-size: 2em;
+  color:white;
+  padding-left: 24px;
+}
+
+span.navigation-button-cluster {
+  text-align: right;
+  color:white;
+  float:right;
+  margin-right: 24px;
+}
+
+
+a.navbutton {
+  font-family: NotesEsa;
+  font-size: 1.5em;
+  color:white;
+  padding-left: 4em;
+}
