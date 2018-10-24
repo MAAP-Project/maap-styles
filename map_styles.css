@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Teko&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i|Open+Sans:400,400i,700|Ropa+Sans:400,400i&subset=latin-ext');
 
 
 h2.new {
-  font-family: "Teko";
+  font-family: "Ropa Sans";
   font-weight: bold;
   margin-bottom: .5em;
   font-size: 2rem;
@@ -52,13 +50,10 @@ html {
     font-weight: normal;
     font-style: normal;
 }
-@font-face  {
-    font-family: 'NotesEsaRegular';
-    src: url('http://esa.int/extension/esa_ext/design/esn2/stylesheets/NotesEsaReg.eot');
-    src: url('http://esa.int/extension/esa_ext/design/esn2/stylesheets/NotesEsaReg.eot?#iefix') format('embedded-opentype'), url('http://esa.int/extension/esa_ext/design/esn2/stylesheets/NotesEsaReg.ttf') format('truetype'), url('http://esa.int/extension/esa_ext/design/esn2/stylesheets/NotesEsaReg.svg#NotesEsaReg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
+
+@font-face{font-family:NotesEsaRegular;src:url(http://sci.esa.int/star_mapper/fonts/4069aeceea99dadd7830c1b6cb008475.eot);src:url(http://sci.esa.int/star_mapper/onts/4069aeceea99dadd7830c1b6cb008475.eot#iefix) format("embedded-opentype"),url(http://sci.esa.int/star_mapper/fonts/f0ba94e6ca4373067fd7b65383f807d0.ttf) format("truetype"),url(http://sci.esa.int/star_mapper/img/7c5b43457afea1a10910ed67a51e44fa.svg#NotesEsaReg) format("svg");font-weight:400;font-style:normal}
+
 a {
   color: var(--color-blue-dark);
 }
@@ -81,7 +76,7 @@ a.external:visited {
 }
 
 a.button {
-  font-family: "NotesEsa";
+  font-family: "Ropa Sans";
   font-weight: normal;
   font-size: 1.5em;
   line-height: 2em;
@@ -113,7 +108,7 @@ a.button-red {
 
 
 h1 {
-    font-family: "Teko";
+    font-family: "Ropa Sans";
     font-weight: bold;
     margin-top: 0;
     margin-bottom: .5em;
