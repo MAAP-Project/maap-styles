@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i|Open+Sans:400,400i,700|Ropa+Sans:400,400i&subset=latin-ext');
 
-
-h2.new {
-  font-family: "Ropa Sans";
-  font-weight: bold;
-  margin-bottom: .5em;
-  font-size: 2rem;
-  color: var(--color-black);
-}
-
-
 :root {
     overflow-y: scroll;
     --color-blue-light2: #9cb7e6;
@@ -46,6 +36,7 @@ html {
   font-size: 16px;
 }
 
+/*
 @font-face  {
     font-family: 'NotesEsaBold';
     src: url('http://esa.int/extension/esa_ext/design/esn2/stylesheets/NotesEsaBol.eot');
@@ -56,6 +47,7 @@ html {
 
 
 @font-face{font-family:NotesEsaRegular;src:url(http://sci.esa.int/star_mapper/fonts/4069aeceea99dadd7830c1b6cb008475.eot);src:url(http://sci.esa.int/star_mapper/onts/4069aeceea99dadd7830c1b6cb008475.eot#iefix) format("embedded-opentype"),url(http://sci.esa.int/star_mapper/fonts/f0ba94e6ca4373067fd7b65383f807d0.ttf) format("truetype"),url(http://sci.esa.int/star_mapper/img/7c5b43457afea1a10910ed67a51e44fa.svg#NotesEsaReg) format("svg");font-weight:400;font-style:normal}
+*/
 
 a {
   color: var(--color-blue-dark);
@@ -121,7 +113,7 @@ h1 {
 }
 
 h2 {
-  font-family: "NotesEsa";
+  font-family: "Ropa Sans";
   font-weight: bold;
   margin-bottom: .5em;
   font-size: 2rem;
@@ -129,7 +121,7 @@ h2 {
 }
 
 h3 {
-  font-family: "NotesEsa";
+  font-family: "Ropa Sans";
   font-weight: bold;
   margin-bottom: .5em;
   font-size: 1.5rem;
@@ -138,7 +130,7 @@ h3 {
 
 
 h4 {
-  font-family: "NotesEsa";
+  font-family: "Ropa Sans";
   font-weight: normal;
   margin-bottom: .5em;
   font-size: 1.2rem;
@@ -184,7 +176,7 @@ table.styled-green th {
   background-color: var(--color-green-light);
   color: white;
   border-bottom: 2px solid var(--color-grey-dark);
-  font-family: "NotesEsa";
+  font-family: "Ropa Sans";
   font-size: 1rem;
   text-align: left;
   padding: 4px 1em 4px 6px;
@@ -253,7 +245,7 @@ div.navbar {
 
 span.site-header {
   text-align: left;
-  font-family: NotesEsa;
+  font-family: "Ropa Sans",sans-serif;
   font-size: 2em;
   color:white;
   padding-left: 24px;
@@ -268,7 +260,7 @@ span.navigation-button-cluster {
 
 
 a.navbutton {
-  font-family: NotesEsa;
+  font-family: "Ropa Sans", sans-serif;
   font-size: 1.5em;
   color:white;
   padding-left: 10px;
@@ -350,7 +342,7 @@ textarea:focus {
 
 
 input[type=submit] {
-    font-family: "NotesEsa","Ropa Sans";
+    font-family: "Ropa Sans", sans-serif;
     font-weight: normal;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -365,7 +357,7 @@ input[type=submit] {
 }
 
 input[type=submit]:disabled {
-    font-family: "NotesEsa","Ropa Sans";
+    font-family: "Ropa Sans", sans-serif;
     font-weight: normal;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -381,7 +373,7 @@ input[type=submit]:disabled {
 }
 
 input[type=reset] {
-    font-family: "NotesEsa","Ropa Sans";
+    font-family: "Ropa Sans",sans-serif;
     font-weight: normal;
     font-size: 1.5rem;
     line-height: 2rem;
