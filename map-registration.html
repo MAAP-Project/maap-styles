@@ -7,6 +7,7 @@
 
   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
   <link href="map_styles.css" type="text/css" rel="stylesheet" media="all">
 
 </head>
@@ -33,18 +34,18 @@
 <form>
   <div class="ui-paragraph">
     <label for="email">Email:</label><br>
-    <input type="text" name="email" id="email" size="40">
+    <input type="text" name="email" id="email" size="40" required>
   </div>
   <div class="ui-paragraph">
     <label for="password">Password:</label><br>
-    <input type="password" name="password" id="password" size="40">
+    <input type="password" name="password" id="password" size="40" required>
   </div>
   <div class="ui-paragraph">
     <label for="about_user">Let us know how you will use MAP:</label><br>
-    <textarea id="about_user" name="about_user" cols="40"></textarea>
+    <textarea id="about_user" name="about_user" cols="40" required></textarea>
   </div>
   <div class="ui-paragraph">
-    <label><input type="checkbox" id="open_agree" value="agree">I agree to open source the software that I make using MAP</label>
+    <label><input type="checkbox" id="open_agree" value="agree" required>I agree to open source the software that I make using MAP</label>
   </div>
   <div class="ui-paragraph">
     <input type="submit" id="register_button" name="register_button" disabled>
